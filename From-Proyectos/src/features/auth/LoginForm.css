@@ -1,0 +1,9 @@
+.cardLogin {
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container {
+  margin-top: 100px;
+  justify-content: center;
+  display: flex;
+}
