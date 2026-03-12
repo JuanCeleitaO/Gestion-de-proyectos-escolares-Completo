@@ -163,7 +163,7 @@ export default function Dashboard() {
                     )}
                 </Drawer>
 
-                <Footer style={{ textAlign: 'center' }}>Mi Proyecto ©2026</Footer>
+                <Footer style={{ textAlign: 'center' }}>Gestión de proyectos escolares ©2026</Footer>
             </Layout>
         </Layout>
     );
