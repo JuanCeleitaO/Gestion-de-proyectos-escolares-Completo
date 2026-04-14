@@ -7,14 +7,14 @@ import {
 } from 'typeorm';
 import { Estudiante } from 'src/estudiantes/entities/estudiantes.entity';
 import { instituciones } from 'src/instituciones/entities/institucion.entity';
+import { Area } from 'src/areas/entities/areas.entity';
 @Entity('proyectos')
 export class Proyectos {
   @PrimaryGeneratedColumn()
   id: number;
   @Column()
   titulo: string;
-  @Column()
-  area: string;
+
   @Column()
   objetivo: string;
   @Column()
@@ -30,4 +30,6 @@ export class Proyectos {
   estudiantes: Estudiante[];
   @ManyToOne(() => instituciones, (instituciones) => instituciones.proyectos)
   institucion: instituciones;
+  @ManyToOne(() => Area, (Area) => Area.proyectos)
+  area: Area;
 }

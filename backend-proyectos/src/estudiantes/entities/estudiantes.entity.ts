@@ -14,8 +14,8 @@ export class Estudiante {
   @Column()
   grado: string;
 
-  @ManyToOne(() => Proyectos, (Proyectos) => Proyectos.estudiantes)
+  @ManyToOne(() => Proyectos, (proyectos) => proyectos.estudiantes)
   proyecto: Proyectos;
-  @ManyToOne(() => Institucion, (Institucion) => Institucion.estudiantes)
-  Institucion: Institucion;
+  @ManyToOne(() => Institucion, (institucion) => institucion.estudiantes)
+  institucion: Institucion;
 }
